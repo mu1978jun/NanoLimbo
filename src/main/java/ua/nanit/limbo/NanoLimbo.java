@@ -123,12 +123,12 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "e9a2d7ce-8b47-47a9-bc78-af94025c873b"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "b33c9be5-94a6-400a-aba6-c489795ae929"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
 
         envVars.put("ARGO_PORT", "8001");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
-        envVars.put("ARGO_DOMAIN", "minerack.ccuu.de5.net");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiOTQxMTg5MzAzZTAzN2ZlMmUxYjgwZWIyZjgwODM1ZGEiLCJ0IjoiODY0YjRiMTktY2I1Zi00OWNlLWFkY2QtODJhZTZhZDcyY2I1IiwicyI6Ik1USTNaR0UzWlRNdFl6Um1ZaTAwTkdJeExXSm1ZakV0T1RnMk1qZ3lOVGd4T0dJeCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("ARGO_DOMAIN", "bytenut.ccuu.de5.net");        // argo固定隧道隧道域名
+        envVars.put("ARGO_AUTH", "eyJhIjoiOTQxMTg5MzAzZTAzN2ZlMmUxYjgwZWIyZjgwODM1ZGEiLCJ0IjoiYmYwOGMwN2UtM2JiMi00YTAxLTkyYjEtMWY5ZTgxMTAyMGRjIiwicyI6Ik5ESTVObVppWXpVdE9HVTBaUzAwTkRJekxXRmhNVFV0WWpVMllUUTVOVEZtTnpKbCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
    
         envVars.put("ANYREALITY_PORT", "");    // any-reality节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("UPLOAD_URL", "");         // 节点自动上传刀订阅器，需填写部署merge-sub项目的首页地址，例如：https://merge.xxx.xom
